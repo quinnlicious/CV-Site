@@ -60,7 +60,7 @@
 h1 {
     display: inline-block;
     color: #f92672;
-    font-family: courier;
+    font-family: Sans-serif;
     font-size: 500%;
     -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: fadein 1s; /* Firefox < 16 */
