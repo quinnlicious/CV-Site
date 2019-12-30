@@ -62,11 +62,11 @@ h1 {
     color: #f92672;
     font-family: Calibri;
     font-size: 500%;
-    -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: fadein 1s; /* Firefox < 16 */
-    -ms-animation: fadein 1s; /* Internet Explorer */
-    -o-animation: fadein 1s; /* Opera < 12.1 */
-    animation: fadein 1s;
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 2s; /* Firefox < 16 */
+    -ms-animation: fadein 2s; /* Internet Explorer */
+    -o-animation: fadein 2s; /* Opera < 12.1 */
+    animation: fadein 2s;
     margin-top:20px;
     margin-bottom: 0px;
 }
@@ -80,11 +80,11 @@ p, p2, p3 {
     color: #9b9b9b;
     font-family: courier;
     font-size: 160%;
-    -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: fadein 4s; /* Firefox < 16 */
-    -ms-animation: fadein 4s; /* Internet Explorer */
-    -o-animation: fadein 4s; /* Opera < 12.1 */
-    animation: fadein 4 s;
+    -webkit-animation: fadein 6s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 6s; /* Firefox < 16 */
+    -ms-animation: fadein 6s; /* Internet Explorer */
+    -o-animation: fadein 6s; /* Opera < 12.1 */
+    animation: fadein 6s;
 }
 
 p,p2
@@ -108,11 +108,11 @@ p3{
     width: 10%;
     height: 15%;
     border-radius: 10px;
-    -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: fadein 1s; /* Firefox < 16 */
-    -ms-animation: fadein 1s; /* Internet Explorer */
-    -o-animation: fadein 1s; /* Opera < 12.1 */
-    animation: fadein 1s;
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 2s; /* Firefox < 16 */
+    -ms-animation: fadein 2s; /* Internet Explorer */
+    -o-animation: fadein 2s; /* Opera < 12.1 */
+    animation: fadein 2s;
 }
 
 table {
@@ -156,7 +156,7 @@ tr.active td div {
 
 #socials{
     position:fixed;
-    display:inline ;
+    display:inline;
     right:10px;
     bottom:0px;
     
