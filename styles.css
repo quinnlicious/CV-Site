@@ -13,14 +13,27 @@
 
     #socials,p,p2,p3,body {
         display:block;
+        
+    }
+    #socials{
+        right:0px;
     }
 
-    table{
+    tr{
         max-width:80vw;
+        font-size:80%;
+
     }
     img{
         display:block;
+        
     }
+    #cvImg
+    {
+       
+        padding-bottom:10px;
+    }
+    
 }
 
 @keyframes fadein {
