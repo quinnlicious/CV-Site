@@ -61,7 +61,7 @@ h1 {
     display: inline-block;
     color: #f92672;
     font-family: Calibri;
-    font-size: 500%;
+    font-size: 400%;
     -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: fadein 2s; /* Firefox < 16 */
     -ms-animation: fadein 2s; /* Internet Explorer */
@@ -69,6 +69,7 @@ h1 {
     animation: fadein 2s;
     margin-top:20px;
     margin-bottom: 0px;
+
 }
 body
 {
@@ -96,8 +97,13 @@ p2 {
     color: #a7e03f;
 }
 
-p3{
-  margin:5% 0% 2.5% 0px;
+p3 {
+    margin: 5% 0% 2.5% 0px;
+    -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 4s; /* Firefox < 16 */
+    -ms-animation: fadein 4s; /* Internet Explorer */
+    -o-animation: fadein 4s; /* Opera < 12.1 */
+    animation: fadein 4s;
 }
 
 #cvImg {

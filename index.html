@@ -23,26 +23,26 @@
 
     <div id="moduleTable">
         <p2 onclick="revealFunction()">Useful modules <i class="far fa-caret-square-down"></i> </p2>
-        <table style="width:50%">
+        <table id="tablemodule" style="width:50%">
             <tr>
                 <td>Modules</td>
             </tr>
-            <tr>
+            <tr id="moduletr">
                 <td><div>Web Authoring</div></td>
                 <td><div>Data Structures and Algorithms</div></td>
                 <td><div>Argumentation</div></td>
             </tr>
-            <tr>
+            <tr id="moduletr">
                 <td><div>Algorithms and AI</div></td>
                 <td><div>Multi-paradigm Programming and Data Structures</div></td>
                 <td><div>Architecture Fundamentals with Unix</div></td>
             </tr>
-            <tr>
+            <tr id="moduletr">
                 <td><div>Database Systems</div></td>
                 <td><div>User Experience</div></td>
                 <td><div>Agile Software Engineering</div></td>
             </tr>
-            <tr>
+            <tr id="moduletr">
                 <td><div>Human Computer Interaction</div></td>
                 <td><div>Information Security</div></td>
                 <td><div>Industrial Team Project</div></td>
@@ -50,38 +50,50 @@
         <script>
             function revealFunction() {
 
-                $('tr').toggleClass('active');
-                $('table').toggleClass('active');
+                $('tr#moduletr').toggleClass('active');
+                $('#tablemodule').toggleClass('active');
             }
 
         </script>
     </div>
 
     <p2 onclick="revealFunctionlanguage()">Skills and Language Experience <i class="far fa-caret-square-down"></i> </p2>
-    <table style="width:50%">
-        <tr>
-            <td>Modules</td>
+    <table id="tablelanguage" style="width:50%">
+        <tr id="moduletr">
+            <td>Skills</td>
         </tr>
-        <tr>
-            <td><div>Web Authoring</div></td>
-            <td><div>Data Structures and Algorithms</div></td>
-            <td><div>Argumentation</div></td>
+        <tr id="languagetr">
+            <td><div>Industrial Experience</div></td>
+            <td><div>Teamwork & Communication</div></td>
+            <td><div>Agile Methodologies</div></td>
         </tr>
-        <tr>
-            <td><div>Algorithms and AI</div></td>
-            <td><div>Multi-paradigm Programming and Data Structures</div></td>
-            <td><div>Architecture Fundamentals with Unix</div></td>
+        <tr id="languagetr">
+            <td><div>Full Stack Web Development</div></td>
+            <td><div>HTML/CSS/Jquery</div></td>
+            <td><div>User Centered Design (UX)</div></td>
         </tr>
-        <tr>
-            <td><div>Database Systems</div></td>
-            <td><div>User Experience</div></td>
-            <td><div>Agile Software Engineering</div></td>
+        <tr id="languagetr">
+            <td><div>Database (SQL)</div></td>
+            <td><div>C#/C++/C</div></td>
+            <td><div>Commandline/Linux/Bash</div></td>
         </tr>
-        <tr>
-            <td><div>Human Computer Interaction</div></td>
-            <td><div>Information Security</div></td>
-            <td><div>Industrial Team Project</div></td>
+        <tr id="languagetr">
+            <td><div>Data Structures</div></td>
+            <td><div>Computer system and Architechture</div></td>
+            <td><div>Phyiscal Computing (Components, arduino etc.</div></td>
     </table>
+
+    <script>
+
+        function revealFunctionlanguage() {
+
+            $('tr#languagetr').toggleClass('active');
+            $('#tablelanguage').toggleClass('active');
+        }
+
+    </script>
+
+
     <div id="socials">
         <a href="https://www.linkedin.com/in/alexander-quinn/">
             <img src="Images/linkedin.png" height="45" width="45" />
