@@ -108,7 +108,7 @@ p3 {
 
 #cvImg {
     display: inline-block;
-    float:right;
+    float: right;
     min-height: 200px;
     min-width: 200px;
     width: 10%;
@@ -119,7 +119,13 @@ p3 {
     -ms-animation: fadein 2s; /* Internet Explorer */
     -o-animation: fadein 2s; /* Opera < 12.1 */
     animation: fadein 2s;
+    transition: transform .2s;
+
 }
+
+    #cvImg:hover {
+        transform: scale(1.75,1.75) translateX(-25%) translateY(30%);
+    }
 
 table {
     border-collapse: collapse;
