@@ -92,6 +92,7 @@ p,p2
     margin:0px;
 }
 p2 {
+    padding-top:10px;
     color: #a7e03f;
 }
 
@@ -154,7 +155,9 @@ tr.active td div {
 }
 
 #socials{
-    position:absolute;
+    position:fixed;
+    display:inline ;
+    right:10px;
     bottom:0px;
     
 }
