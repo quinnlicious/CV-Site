@@ -100,11 +100,11 @@ body {
 }
 
 #row3 {
-    -webkit-animation: fadein 5s; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: fadein 5s; /* Firefox < 16 */
-    -ms-animation: fadein 5s; /* Internet Explorer */
-    -o-animation: fadein 5s; /* Opera < 12.1 */
-    animation: fadein 5s;
+    -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 4s; /* Firefox < 16 */
+    -ms-animation: fadein 4s; /* Internet Explorer */
+    -o-animation: fadein 4s; /* Opera < 12.1 */
+    animation: fadein 4s;
 }
 
 .scetion2 {
