@@ -202,6 +202,11 @@ tr.active td div {
         align-content: center;
         max-width: 100vw;
     }
+    
+    .row
+    {
+       
+    }
 
     #socials, p, p2, p3, body {
         display: block;
