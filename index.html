@@ -2,6 +2,7 @@
 <html lang="en-UK">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
 <script src="https://kit.fontawesome.com/caf1c83931.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="css/bootstrap.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <head>
 <link rel="stylesheet" href="styles.css">
@@ -10,101 +11,142 @@
 
 <body>
 
-    <h1>Alexander Quinn CV</h1>
-    <img style="" id="cvImg" src="Images/CVPIC.jpg" />
-    <p> Applied Computing Graduate - June 2020</p>
-    <p2>  University of Dundee </p2>
+    <section class="section1">
+        <div class="container">
+            <div class="row">
 
-    <p3>
-        <b>Welcome to the site!</b> <br />
-        My name is Alexander Quinn, I am an Irish Computing graduate studying in Scotland at the University of Dundee. <br />
-        This page is meant to showcase me and my ability, below I have listed helpful skills I have learned throughout university, also the modules with most interest.
-    </p3>
+                <h1>Alexander Quinn CV</h1>
 
-    <div id="moduleTable">
-        <p2 onclick="revealFunction()">Useful modules <i class="far fa-caret-square-down"></i> </p2>
-        <table id="tablemodule" style="width:50%">
-            <tr>
-                <td>Modules</td>
-            </tr>
-            <tr id="moduletr">
-                <td><div>Web Authoring</div></td>
-                <td><div>Data Structures and Algorithms</div></td>
-                <td><div>Argumentation</div></td>
-            </tr>
-            <tr id="moduletr">
-                <td><div>Algorithms and AI</div></td>
-                <td><div>Multi-paradigm Programming and Data Structures</div></td>
-                <td><div>Architecture Fundamentals with Unix</div></td>
-            </tr>
-            <tr id="moduletr">
-                <td><div>Database Systems</div></td>
-                <td><div>User Experience</div></td>
-                <td><div>Agile Software Engineering</div></td>
-            </tr>
-            <tr id="moduletr">
-                <td><div>Human Computer Interaction</div></td>
-                <td><div>Information Security</div></td>
-                <td><div>Industrial Team Project</div></td>
-        </table>
-        <script>
-            function revealFunction() {
+            </div>
+            <div class="row">
 
-                $('tr#moduletr').toggleClass('active');
-                $('#tablemodule').toggleClass('active');
-            }
+                <div class="col-5">
+                    <img style="" id="cvImg" src="Images/CVPIC.jpg" />
+                </div>
+                <div class="col-5">
+                    <p> Applied Computing Graduate June 2020</p>
+                    <p2>  University of Dundee </p2>
+                </div>
+            </div>
 
-        </script>
-    </div>
+            <div class="row">
+                <div class="col-2">
+                </div>
+                <div class="col-10">
+                    <p3>
+                        <b>Welcome to the site!</b> <br />
+                        My name is Alexander Quinn, I am an Irish Computing graduate studying in Scotland at the University of Dundee. <br />
+                        This page is meant to showcase me and my ability, below I have listed helpful skills I have learned throughout university, also the modules with most interest.
+                    </p3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section2">
+        <div class="container" id="tablecontainer">
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-5">
+                    <div class="card" id="tablecard">
 
-    <p2 onclick="revealFunctionlanguage()">Skills and Language Experience <i class="far fa-caret-square-down"></i> </p2>
-    <table id="tablelanguage" style="width:50%">
-        <tr id="moduletr">
-            <td>Skills</td>
-        </tr>
-        <tr id="languagetr">
-            <td><div>Industrial Experience</div></td>
-            <td><div>Teamwork & Communication</div></td>
-            <td><div>Agile Methodologies</div></td>
-        </tr>
-        <tr id="languagetr">
-            <td><div>Full Stack Web Development</div></td>
-            <td><div>HTML CSS  Jquery</div></td>
-            <td><div>User Centered Design (UX)</div></td>
-        </tr>
-        <tr id="languagetr">
-            <td><div>Database (SQL)</div></td>
-            <td><div>C# C++ C</div></td>
-            <td><div>Commandline Linux Bash</div></td>
-        </tr>
-        <tr id="languagetr">
-            <td><div>Data Structures</div></td>
-            <td><div>Computer system and Architechture</div></td>
-            <td><div>Phyiscal Computing (Components, arduino etc.)</div></td>
-    </table>
+                    <div id="moduleTable">
+                        <p2 onclick="revealFunction()">Useful modules <i class="far fa-caret-square-down"></i> </p2>
+                        <table id="tablemodule" style="width:50%">
+                            <tr>
+                                <td>Modules</td>
+                            </tr>
+                            <tr id="moduletr">
+                                <td><div>Web Authoring</div></td>
+                                <td><div>Data Structures and Algorithms</div></td>
+                                <td><div>Argumentation</div></td>
+                            </tr>
+                            <tr id="moduletr">
+                                <td><div>Algorithms and AI</div></td>
+                                <td><div>Multi-paradigm Programming and Data Structures</div></td>
+                                <td><div>Architecture Fundamentals with Unix</div></td>
+                            </tr>
+                            <tr id="moduletr">
+                                <td><div>Database Systems</div></td>
+                                <td><div>User Experience</div></td>
+                                <td><div>Agile Software Engineering</div></td>
+                            </tr>
+                            <tr id="moduletr">
+                                <td><div>Human Computer Interaction</div></td>
+                                <td><div>Information Security</div></td>
+                                <td><div>Industrial Team Project</div></td>
+                        </table>
+                    </div>
+                        <script>
+                            function revealFunction() {
 
-    <script>
+                                $('tr#moduletr').toggleClass('active');
+                                $('#tablemodule').toggleClass('active');
+                            }
 
-        function revealFunctionlanguage() {
+                        </script>
+                    </div>
+                </div>
 
-            $('tr#languagetr').toggleClass('active');
-            $('#tablelanguage').toggleClass('active');
-        }
+                <div class="col-5">
+                    <div class="card" id="tablecard">
+                        <div id="moduleTable">
+                            <p2 onclick="revealFunctionlanguage()">Skills + Experience <i class="far fa-caret-square-down"></i> </p2>
+                            <table id="tablelanguage" style="width:50%">
+                                <tr id="moduletr">
+                                    <td>Skills</td>
+                                </tr>
+                                <tr id="languagetr">
+                                    <td><div>Industrial Experience</div></td>
+                                    <td><div>Teamwork & Communication</div></td>
+                                    <td><div>Agile Methodologies</div></td>
+                                </tr>
+                                <tr id="languagetr">
+                                    <td><div>Full Stack Web Development</div></td>
+                                    <td><div>HTML CSS  Jquery</div></td>
+                                    <td><div>User Centered Design (UX)</div></td>
+                                </tr>
+                                <tr id="languagetr">
+                                    <td><div>Database (SQL)</div></td>
+                                    <td><div>C# C++ C</div></td>
+                                    <td><div>Commandline Linux Bash</div></td>
+                                </tr>
+                                <tr id="languagetr">
+                                    <td><div>Data Structures</div></td>
+                                    <td><div>Computer system and Architechture</div></td>
+                                    <td><div>Phyiscal Computing (Components, arduino etc.)</div></td>
+                            </table>
+                        </div>
+                            <script>
 
-    </script>
+                                function revealFunctionlanguage() {
+
+                                    $('tr#languagetr').toggleClass('active');
+                                    $('#tablelanguage').toggleClass('active');
+                                }
+
+                            </script>
+                        </div>
+                    </div>
+        </div>
 
 
-    <div id="socials">
-        <a href="https://www.linkedin.com/in/alexander-quinn/">
-            <img src="Images/linkedin.png" height="45" width="45" />
-        </a>
-        <a href="https://github.com/quinnlicious">
-            <img src="Images/github.png" height="45" width="45" />
-        </a>
-        <a href="https://twitter.com/Quinnscodes">
-            <img src="Images/twitter.png" height="45" width="45" />
-        </a>
-    </div>
+
+        <div id="socials">
+            <a href="https://www.linkedin.com/in/alexander-quinn/">
+                <img src="Images/linkedin.png" height="45" width="45" />
+            </a>
+            <a href="https://github.com/quinnlicious">
+                <img src="Images/github.png" height="45" width="45" />
+            </a>
+            <a href="https://twitter.com/Quinnscodes">
+                <img src="Images/twitter.png" height="45" width="45" />
+            </a>
+        </div>
+
+
+        <p>heheheheheeheh</p>
+
+    </section>
 </body>
 
 </html>

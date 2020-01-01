@@ -1,5 +1,4 @@
-html
-{
+html {
     
 }
 @keyframes fadein {
@@ -58,7 +57,10 @@ html
 
 
 h1 {
-    display: inline-block;
+    
+    float:none;
+    margin:0 auto;
+    margin-bottom:5%;
     color: #f92672;
     font-family: Calibri;
     font-size: 400%;
@@ -67,20 +69,29 @@ h1 {
     -ms-animation: fadein 2s; /* Internet Explorer */
     -o-animation: fadein 2s; /* Opera < 12.1 */
     animation: fadein 2s;
-    margin-top:20px;
-    margin-bottom: 0px;
+
 
 }
 body {
+    margin:0px;
     overflow-y: scroll;
-    background-color: #1f1f1f;
+    height: 100vh;
 }
 
+.section1 {
+    background-color: #1f1f1f;
+    
+}
+
+.scetion2 {
+    height: 100%;
+    background-color: #a2ab59;
+}
 p, p2, p3 {
     display:block;
     color: #9b9b9b;
     font-family: courier;
-    font-size: 160%;
+    font-size: 150%;
     -webkit-animation: fadein 6s; /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: fadein 6s; /* Firefox < 16 */
     -ms-animation: fadein 6s; /* Internet Explorer */
@@ -98,7 +109,7 @@ p2 {
 }
 
 p3 {
-    margin: 5% 0% 2.5% 0px;
+    margin: 5% 0% 5% 0px;
     -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: fadein 4s; /* Firefox < 16 */
     -ms-animation: fadein 4s; /* Internet Explorer */
@@ -108,7 +119,7 @@ p3 {
 
 #cvImg {
     display: inline-block;
-    float: right;
+    float:right;
     min-height: 200px;
     min-width: 200px;
     width: 10%;
@@ -123,9 +134,16 @@ p3 {
 
 }
 
-    #cvImg:hover {
-        transform: scale(1.75,1.75) translateX(-25%) translateY(30%);
-    }
+#tablecard
+{
+    min-height:20vh;
+
+}
+
+#moduleTable{
+    float:right;
+    padding:2%;
+}
 
 table {
     border-collapse: collapse;
@@ -174,6 +192,10 @@ tr.active td div {
     
 }
 
+.card {
+    background-color: #1f1f1f;
+    margin-top:10%;
+}
 @media only screen and (max-width: 550px) {
     * {
         text-align: left;
