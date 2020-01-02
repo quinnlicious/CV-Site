@@ -1,6 +1,23 @@
 html {
     
 }
+
+html:not([data-scroll='0']) {
+    row2{
+        transition: max-height 1s, padding 1s;
+
+        }
+ }
+
+@keyframes linearslide {
+    0% {
+        height: 1%;
+    }
+
+    100% {
+        height: 100%;
+    }
+}
 @keyframes fadein {
     from {
         opacity: 0;
@@ -143,6 +160,10 @@ p3 {
 
 }
 
+#imgcard {
+    padding: 2%;
+}
+
 #tablecard
 {
     min-height:20vh;
@@ -158,8 +179,12 @@ table {
     border-collapse: collapse;
     visibility:collapse;
     color:white;
-    
 }
+
+table.active {
+        visibility: visible;
+    }
+
 
 tr:nth-child(odd) {
     background-color: #404040;
@@ -173,10 +198,7 @@ td {
     font-family: Calibri;
     font-size: 120%;
 }
-table.active
-{
-    visibility:visible;
-}
+
 tr td div {
     visibility:collapse;
     max-height: 0;
@@ -212,31 +234,28 @@ tr.active td div {
         max-width: 100vw;
     }
     
-    .row
+ .row
     {
        
     }
 
-    #socials, p, p2, p3, body {
-        display: block;
-    }
 
-    #socials {
+#socials {
         top: 4%;
         right: 0px;
         position: absolute;
     }
 
-    tr {
+tr {
         max-width: 80vw;
         font-size: 80%;
     }
 
-    img {
-        display: block;
+img {
+        display:inline;
     }
 
-    #cvImg {
+#cvImg {
         padding-bottom: 10px;
     }
 }

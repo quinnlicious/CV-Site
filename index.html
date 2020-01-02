@@ -2,6 +2,9 @@
 <html lang="en-UK">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
 <script src="https://kit.fontawesome.com/caf1c83931.js" crossorigin="anonymous"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 <link rel="stylesheet" href="css/bootstrap.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <head>
@@ -9,8 +12,11 @@
 <title>Alexander Quinn</title>
 </head>
 
-<body>
 
+<body>
+    <script>
+        AOS.init();
+    </script>
     <section class="section1">
         <div class="container">
             <div class="row">
@@ -45,37 +51,37 @@
     <section class="section2">
         <div class="container" id="tablecontainer">
             <div class="row" id="row3">
-                <div class="col-1"></div>
-                <div class="col-5">
+                
+                <div class="col-6">
                     <div class="card" id="tablecard">
 
-                    <div id="moduleTable">
-                        <p2 onclick="revealFunction()">Useful modules <i class="far fa-caret-square-down"></i> </p2>
-                        <table id="tablemodule" style="width:50%">
-                            <tr>
-                                <td>Modules</td>
-                            </tr>
-                            <tr id="moduletr">
-                                <td><div>Web Authoring</div></td>
-                                <td><div>Data Structures and Algorithms</div></td>
-                                <td><div>Argumentation</div></td>
-                            </tr>
-                            <tr id="moduletr">
-                                <td><div>Algorithms and AI</div></td>
-                                <td><div>Multi-paradigm Programming and Data Structures</div></td>
-                                <td><div>Architecture Fundamentals with Unix</div></td>
-                            </tr>
-                            <tr id="moduletr">
-                                <td><div>Database Systems</div></td>
-                                <td><div>User Experience</div></td>
-                                <td><div>Agile Software Engineering</div></td>
-                            </tr>
-                            <tr id="moduletr">
-                                <td><div>Human Computer Interaction</div></td>
-                                <td><div>Information Security</div></td>
-                                <td><div>Industrial Team Project</div></td>
-                        </table>
-                    </div>
+                        <div id="moduleTable">
+                            <p2 onclick="revealFunction()">Useful modules <i class="far fa-caret-square-down"></i> </p2>
+                            <table id="tablemodule" style="width:50%">
+                                <tr>
+                                    <td>Modules</td>
+                                </tr>
+                                <tr id="moduletr">
+                                    <td><div>Web Authoring</div></td>
+                                    <td><div>Data Structures and Algorithms</div></td>
+                                    <td><div>Argumentation</div></td>
+                                </tr>
+                                <tr id="moduletr">
+                                    <td><div>Algorithms and AI</div></td>
+                                    <td><div>Multi-paradigm Programming and Data Structures</div></td>
+                                    <td><div>Architecture Fundamentals with Unix</div></td>
+                                </tr>
+                                <tr id="moduletr">
+                                    <td><div>Database Systems</div></td>
+                                    <td><div>User Experience</div></td>
+                                    <td><div>Agile Software Engineering</div></td>
+                                </tr>
+                                <tr id="moduletr">
+                                    <td><div>Human Computer Interaction</div></td>
+                                    <td><div>Information Security</div></td>
+                                    <td><div>Industrial Team Project</div></td>
+                            </table>
+                        </div>
                         <script>
                             function revealFunction() {
 
@@ -87,7 +93,7 @@
                     </div>
                 </div>
 
-                <div class="col-5">
+                <div class="col-6">
                     <div class="card" id="tablecard">
                         <div id="moduleTable">
                             <p2 onclick="revealFunctionlanguage()">Skills + Experience <i class="far fa-caret-square-down"></i> </p2>
@@ -102,7 +108,7 @@
                                 </tr>
                                 <tr id="languagetr">
                                     <td><div>Full Stack Web Development</div></td>
-                                    <td><div>HTML CSS  Jquery</div></td>
+                                    <td><div>HTML CSS  Jquery/JS</div></td>
                                     <td><div>User Centered Design (UX)</div></td>
                                 </tr>
                                 <tr id="languagetr">
@@ -116,37 +122,78 @@
                                     <td><div>Phyiscal Computing (Components, arduino etc.)</div></td>
                             </table>
                         </div>
-                            <script>
+                        <script>
 
-                                function revealFunctionlanguage() {
+                            function revealFunctionlanguage() {
 
-                                    $('tr#languagetr').toggleClass('active');
-                                    $('#tablelanguage').toggleClass('active');
-                                }
+                                $('tr#languagetr').toggleClass('active');
+                                $('#tablelanguage').toggleClass('active');
+                            }
 
-                            </script>
-                        </div>
+                        </script>
                     </div>
-        </div>
+                </div>
+            </div>
+
+            <div class="row" id="row4" data-aos="fade-down" data-aos-duration="1000">
+                <div class="col">
+                    <div class="card" id="imgcard">
+
+                        <h1>Favourite Languages & Frameworks</h1>
+                        <div class="row" id="row4">
+                            <div class="col-4" id="imgcard">
+                                <img src="Images/htmlcssjs.png" height="150" width="270" />
+                            </div>
+
+                            <div class="col-2" id="imgcard">
+                                <img src="Images/csharp.png" height="150" width="150" />
+
+                            </div>
+                            <div class="col-2" id="imgcard">
+                                <img src="Images/bootstrap.png" height="150" width="150" />
+
+                            </div>
+
+                            <div class="col-2" id="imgcard">
+                                <img src="Images/php.png" height="150" width="200" />
+                            </div>
+                        </div>
+
+                </div>
+             </div>
+            </div>
 
 
 
-        <div id="socials">
-            <a href="https://www.linkedin.com/in/alexander-quinn/">
-                <img src="Images/linkedin.png" height="45" width="45" />
-            </a>
-            <a href="https://github.com/quinnlicious">
-                <img src="Images/github.png" height="45" width="45" />
-            </a>
-            <a href="https://twitter.com/Quinnscodes">
-                <img src="Images/twitter.png" height="45" width="45" />
-            </a>
-        </div>
+            <div class="row" id="row5" data-aos="fade-down" data-aos-duration="1000">
+                <div class="col">
+                    <div class="card" id="imgcard">
+                        <p2>Contact links</p2>
+                        <p>Email: Akquinn@gmail.com</p> 
+                        <p>Github: <a href="url"> https://github.com/quinnlicious </a></p>
+                        <p>Twitter: <a href="url">https://twitter.com/Quinnscodes</a></p>
+                        <p>LinkedIn: <a href="url">https://www.linkedin.com/in/alexander-quinn </a></p>
+                    </div>
+
+                </div>
+
+                </div>
+                <div id="socials">
+                    <a href="https://www.linkedin.com/in/alexander-quinn/">
+                        <img src="Images/linkedin.png" height="45" width="45" />
+                    </a>
+                    <a href="https://github.com/quinnlicious">
+                        <img src="Images/github.png" height="45" width="45" />
+                    </a>
+                    <a href="https://twitter.com/Quinnscodes">
+                        <img src="Images/twitter.png" height="45" width="45" />
+                    </a>
+                </div>
 
 
-        
 
-    </section>
+
+</section>
 </body>
 
 </html>
