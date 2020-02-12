@@ -35,7 +35,7 @@ html{
 .section3 img{
 
 width: 200%;
-height:40%;
+height:30%;
 
 }
 }
@@ -317,6 +317,10 @@ img {
     }
 }
 
+#uodscroll
+{
+ padding-bottom:2%;
+}
 .circle {
     padding: 13px 20px;
     border-radius: 50%;
