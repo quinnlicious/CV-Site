@@ -28,8 +28,8 @@ html{
 
 #row4 img
 {
-    height:80%;
-    width:80%;
+    height:100%;
+    width:100%;
 }
 }
 
@@ -130,10 +130,11 @@ body {
     overflow-y: scroll;
     height: 100vh;
 }
-aos-script
-{
-    visibility:hidden;
-}
+
+script {
+    display: none;
+  }
+
 .section1 {
     background-color: #1f1f1f;
     
