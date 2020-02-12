@@ -34,8 +34,9 @@ html{
 
 .section3 img{
 
-width: 300%;
-height:30%;
+width: 250%;
+height:25%;
+display:inline-block;
 
 }
 }
