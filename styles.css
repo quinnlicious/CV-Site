@@ -34,6 +34,10 @@ html{
 }
 
 
+
+
+
+
 html:not([data-scroll='0']) {
     row2{
         transition: max-height 1s, padding 1s;
@@ -126,7 +130,10 @@ body {
     overflow-y: scroll;
     height: 100vh;
 }
-
+aos-script
+{
+    visibility:hidden;
+}
 .section1 {
     background-color: #1f1f1f;
     
