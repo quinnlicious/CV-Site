@@ -8,7 +8,7 @@ html {
 }
 
 head{
-    visibility:hidden;
+   display:none;
 }
 html{
     width:100%;
