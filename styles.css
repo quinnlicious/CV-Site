@@ -208,8 +208,7 @@ p3 {
 #cvImg {
     display: inline-block;
     float:right;
-    min-height: 200px;
-    min-width: 200px;
+   
     width: 10%;
     height: 15%;
     border-radius: 10px;
