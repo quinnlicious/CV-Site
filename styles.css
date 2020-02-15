@@ -44,6 +44,15 @@ display:inline-block;
     min-height: 100px;
     min-width: 100%;
 }
+#uodlogo{
+    height: 100%;
+    width: 25%;
+   }
+   
+   #nrclogo{
+       height:100%;
+       width:25%;
+   }
 }
 
 
@@ -339,7 +348,10 @@ img {
     padding-right:0px;
 }
 
+
+
 }
+
 
 #uodscroll
 {
