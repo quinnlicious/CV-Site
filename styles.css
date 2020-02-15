@@ -304,7 +304,7 @@ tr.active td div {
 
 
 #socials {
-        top: 5%;
+        top: 8%;
         right: 0px;
         position: absolute;
     }
@@ -325,6 +325,12 @@ img {
         min-height:60%;
         min-width:105%;
     }
+
+#cvImgcol{
+
+    padding-right:0px;
+}
+
 }
 
 #uodscroll
