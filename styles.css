@@ -39,6 +39,11 @@ height:25%;
 display:inline-block;
 
 }
+
+#cvImg{
+    min-height: 100px;
+    min-width: 100px;
+}
 }
 
 
@@ -210,8 +215,8 @@ p3 {
     float:right;
     min-height: 200px;
     min-width: 200px;
-    width: 70%;
-    height: 100%;
+    width: 10%;
+    height: 15%;
     border-radius: 10px;
     transition: transform .2s;
 
