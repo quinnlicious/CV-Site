@@ -16,6 +16,11 @@ html{
     height:100%;
 }
 
+#tablelanguage
+{
+
+}
+
 div.block{
     overflow:hidden;
   }
@@ -258,6 +263,7 @@ p3 {
     min-height:20vh;
 
 }
+
 
 #moduleTable{
     float:right;
