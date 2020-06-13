@@ -16,6 +16,15 @@ html{
     height:100%;
 }
 
+div.block{
+    overflow:hidden;
+  }
+  div.block label{
+    width:160px;
+    display:block;
+    float:left;
+    text-align:left;
+  }
 
 #socials{
     display:inline-block;
