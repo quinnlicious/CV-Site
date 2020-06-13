@@ -263,47 +263,6 @@ p3 {
     float:right;
     padding:2%;
 }
-
-table {
-    border-collapse: collapse;
-    visibility:collapse;
-    color:white;
-}
-
-table.active {
-        visibility: visible;
-    }
-
-
-tr:nth-child(odd) {
-    background-color: #404040;
-}
-tr:nth-child(even) {
-    background-color: #2a2a2a;
-}
-
-td {
-    border: 1px solid #f92672;
-    font-family: Calibri;
-    font-size: 120%;
-}
-
-tr td div {
-    visibility:collapse;
-    max-height: 0;
-    padding: 0 10px;
-    box-sizing: border-box;
-    overflow: hidden;
-    transition: max-height 0.2s, padding 0.2s;
-}
-
-tr.active td div {
-    visibility: visible;
-    max-height: 100px;
-    padding: 10px 10px;
-    transition: max-height 1s, padding 1s;
-}
-
 #socials{
     position:fixed;
     display:inline;
@@ -340,10 +299,6 @@ tr.active td div {
         position: absolute;
     }
 
-tr {
-        max-width: 80vw;
-        font-size: 80%;
-    }
 
 img {
         display:inline;
