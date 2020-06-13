@@ -66,7 +66,7 @@
                                
                             <p2 onclick="revealFunction()">Useful modules <i class="far fa-caret-square-down"></i> </p2>
 
-                            <div class="block">
+                            <div class="block" id="block">
                                 <br>
                                 <br>
                                 <br>
@@ -76,7 +76,7 @@
                                     &emsp;
                                     <label>Argumentation</label>
                             </div>
-                            <div class="block">
+                            <div class="block" id="block">
                                     <label>First field</label>
                             </div>
                             <table id="tablemodule" style="width:50%">
@@ -107,8 +107,8 @@
                         <script>
                             function revealFunction() {
 
-                                $('tr#moduletr').toggleClass('active');
-                                $('#tablemodule').toggleClass('active');
+                                $('block').toggleClass('active');
+                            
                             }
 
                         </script>
