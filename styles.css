@@ -18,7 +18,9 @@ html{
 
 #tablelanguage
 {
-
+    color:white;
+    font-style:calibri;
+    font-size-adjust:120%;
 }
 
 div.block{
