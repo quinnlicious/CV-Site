@@ -303,6 +303,15 @@ p3 {
 
 }
 
+#projectcard
+{
+    background-color:rgb(70, 70, 70);
+    min-height:20vh;
+    width:80vw;
+    margin-left:10vw;
+    box-shadow: 0 4px 8px 0 rgba(70, 70, 70, 0.2), 0 6px 20px 0 rgba(70, 70, 70, 0.2);
+    margin-top:10vh;
+}
 
 #moduleTable{
     float:right;
@@ -322,7 +331,13 @@ p3 {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-
+.carouselcontainer
+{
+    
+    padding-left:20vw;
+    padding-right:20vw;
+    
+}
 
 /* MOBILE CONFIGURATIONS */
 @media only screen and (max-device-width: 550px) {
@@ -361,7 +376,6 @@ img {
 
     padding-right:0px;
 }
-
 
 
 }
