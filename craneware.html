@@ -13,6 +13,7 @@
 <title>Alexander Quinn</title>
 </head>
 <body>
+  <div class="backbutton"onclick="location.href='index.html';" style="cursor: pointer;"><i class="fas fa-arrow-left"></i></div>
         <div class="aos-script">
                 <script>
                         AOS.init();
@@ -34,7 +35,7 @@
 
 <br>
 
-<div class="carouselcontainer">
+<div class="carouselcontainer"data-aos="zoom-out-down" data-aos-duration="1000"data-aos-offset="0">
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -64,15 +65,29 @@
 </div>
 <script>
         $('.carousel').carousel({
-          interval: 2000
+          interval: 3000
         })
   </script>
 
 <div class="card" id="projectcard" data-aos="fade-down" data-aos-duration="1000"data-aos-offset="0">
-<h1 style="margin-bottom:.5%;">What is it?</h1>
-<p2>subhead</p2>
-<p>description</p>
-    </div>
+<h1 style="margin-bottom:.5%;">HealthDome</h1>
+
+<p2 style="text-align: center;">For our Industrial Experience, Craneware partnered with the university to give us a project on their behalf.</p2> <br>
+
+<p>The brief Craneware gave us was: <br>"a price comparison tool for Americas healthcare + procedure from hospital to hospital"</p><br><br>
+
+<p3>We were given a JSON full of millions of lines of data to do with every procedure, hospital, price and insurance deductables. First, we found all of the relevant data in the JSON
+  and applied it to an SQL database we created on the university servers.<br>
+
+</p3>
+
+<p2>I then took control of the website and the interactions that would take place from the client. A member of our team wrote scripts to sift through google API to find the locations 
+  of each hospital. I then used this data to pin points on the google maps api, as well as finding photos and contact information from their google page that we put on the "More Details" Page. 
+</p2>
+<br><br>
+<p>The outcome was a fully polished site, allowing users many search and filtering functions that allows Americans to find the cheapest procedure within their state, or described area.</p>
+<br>
+</div>
   <br><br>
   </section>
   </body>

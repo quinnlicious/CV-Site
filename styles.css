@@ -162,6 +162,42 @@ h1 {
 
 
 }
+.linkholder
+{
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 2s; /* Firefox < 16 */
+    -ms-animation: fadein 2s; /* Internet Explorer */
+    -o-animation: fadein 2s; /* Opera < 12.1 */
+    animation: fadein 2s;
+}
+.backbutton
+{
+ position:absolute;
+ top:1vw;
+ left:1vw;
+ width:5vw;
+ height:3vw;
+ background-color: #a7e03f;
+ border-radius: 25px;
+  border: 2px solid #a7e03f;
+  text-align: center;
+  font-size: 200%;
+}
+.youtubecontainer
+{
+    margin-left:20vw;
+    margin-right:20vw;
+    width:60vw;
+    height: 33.75vw;
+}
+.resp-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
 .grid-container 
 {
     display: grid;
@@ -252,6 +288,11 @@ p, p2, p3 {
     color: #9b9b9b;
     font-family: courier;
     font-size: 150%;
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 2s; /* Firefox < 16 */
+    -ms-animation: fadein 2s; /* Internet Explorer */
+    -o-animation: fadein 2s; /* Opera < 12.1 */
+    animation: fadein 2s;
 }
 
 p4
@@ -333,7 +374,11 @@ p3 {
 
 .carouselcontainer
 {
-    
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 2s; /* Firefox < 16 */
+    -ms-animation: fadein 2s; /* Internet Explorer */
+    -o-animation: fadein 2s; /* Opera < 12.1 */
+    animation: fadein 2s;
     padding-left:20vw;
     padding-right:20vw;
     
