@@ -71,10 +71,7 @@ h1{
     width: 220%;
 }
    
-#nrclogo
-{
-    height:18%;
-     width:180%;
+
 }
 #dusalogo
 {
@@ -304,10 +301,7 @@ script {
     animation: fadein 4s;
 }
 
-.scetion2 {
-    height: 100%;
-    background-color: #a2ab59;
-}
+
 p, p2, p3 {
     display:block;
     color: #9b9b9b;
@@ -333,6 +327,8 @@ background-position: left center;
 background-size:10%;
 list-style: none;
  background-image: url("images/bullet.gif");
+ font-size: 1.5vw;
+
 }
 p,p2
 {
@@ -453,11 +449,16 @@ img {
 
 }
 
+#timelineimg
+{
+    height:auto;
+    max-width:100%;
+}
 
-
-
-/* Non-Mobile Settings */
-
+#timelineimgcol
+{
+ padding:1px;
+}
 
 #uodscroll
 {
