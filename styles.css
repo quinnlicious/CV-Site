@@ -359,7 +359,7 @@ p3 {
 #cvImg {
     display: inline-block;
     float:right;
-    width: 100%;
+    width: 80%;
     height: auto;
     border-radius: 10px;
     transition: transform .2s;
