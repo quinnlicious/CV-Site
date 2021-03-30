@@ -9,7 +9,15 @@ height:100%;
 *{
         display:block;
 }
+#introtext
+{
+    font-size:10px;
+}
+#cvImgcol{
 
+    padding-right:0px;
+    height:auto;
+}
 head{
    display:none;
 }
@@ -20,13 +28,14 @@ overflow-x:hidden;
 }
 .grid-container
 {
+    height:60%;
     font-size:40%;
     word-wrap:break-word;
 }
 
 .grid-item
 {
-    height:100%;
+    padding:1%;
     width:100%;
 }
 
@@ -53,7 +62,7 @@ div.block{
 ul{
     padding-left:12%;
     padding-right:1%;
-    font-size:11px;
+    font-size:9px;
 }
 #tablecard
 {
