@@ -24,8 +24,12 @@ head{
 body{
 width:100%;
 overflow-x:hidden;
-   
+
 }
+h1{
+    font-size: 90%;
+}
+
 .grid-container
 {
     height:60%;
