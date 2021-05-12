@@ -15,10 +15,18 @@ margin: 0;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 background-color: rgb(214, 214, 214);
-
-
 }
 
+h1
+{
+    font-size: 46px;
+    background: -webkit-linear-gradient(259deg, #4158D0 16%, #C850C0 41%, #FFCC70 99%);
+    background: linear-gradient(259deg, #4158D0 16%, #C850C0 41%, #FFCC70 99%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+    
 form
 {
     border-radius: 25px;
