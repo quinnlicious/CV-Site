@@ -36,13 +36,25 @@
     <label for="Weight">Weight (kg): </label>
     <input type=”number” id="Weight" name="Weight">
     <br><br>
-    
-    <input type="radio" id="gender" name="gender" value="male">
-    <label for="male">Male</label><br>
-    <input type="radio" id="gender" name="gender" value="female">
-    <label for="female">Female</label><br>
+    <label for="Exercise">Amount of Activity:</label>
+    <select id="Exercise" name="Exercise">
+    <option value="" disabled="disabled" selected="selected">Exercise Amount</option>
+    <option value="sedentary">Sedentary (little to no exercise)</option>
+    <option value="mild">Mild activity (1-3 times per week)</option>
+    <option value="moderate">Moderate (3-4 times per week)</option>
+    <option value="heavy">Heavy exercise (5-7 times per week)</option>
+    </select> 
+    <br><br>
+    <label for="Gender">Gender: </label>
+    <select id="Gender" name="Gender">
+    <option value="" disabled="disabled" selected="selected">Gender</option>
+    <option value="male">Male</option>
+    <option value="female">Female</option>
+    </select> 
     </p2>
-    <input type="Button" value="Calculate!" onclick="CalculateCalories()" >
+    <br><br>
+    <input type="button" value="Calculate!" onclick="CalculateCalories()" >
+    <br><br>
 
     <script>
     function CalculateCalories()
@@ -51,8 +63,10 @@
     var age = form.elements["Age"];
     var height = form.elements["Height"];
     var weight = form.elements["Weight"];
-    var gender = form.elements["gender"];
+    var gender = form.elements["Gender"];
+    var exercise = form.elements["Exercise"];
     var totalcals = 0;
+
     if(age.value!="")
     {
         userage = parseInt(age.value);
@@ -66,15 +80,34 @@
         userweight = parseInt(weight.value);
     }
 
-    if (gender.value="male")
-    {
-        totalcals = (66.4 + (13.75*userweight) + (5.003 * userheight) - (6.755 * userage));
-    }
-    else if (gender.value="female")
+    if (gender.value=="female")
     {
         totalcals = (655 + (9.563*userweight) + (1.850 * userheight) - (4.676 * userage));
     }
-    calorienumber.innerText = totalcals + (" Calories!");
+    else if (gender.value=="male")
+    {
+        totalcals = (66.4 + (13.75*userweight) + (5.003 * userheight) - (6.755 * userage));
+    }
+ 
+
+    if (exercise.value=="sedentary")
+    {
+        totalcals = (totalcals * 1.2);
+    }
+    else if (exercise.value=="mild")
+    {
+        totalcals = (totalcals * 1.375);
+    }
+    else if (exercise.value=="moderate")
+    {
+        totalcals = (totalcals * 1.55);
+    }
+    else if (exercise.value=="heavy")
+    {
+        totalcals = (totalcals * 1.7);
+    }
+    var finalnumber = parseInt(totalcals);
+    calorienumber.innerText = finalnumber + (" Calories!");
     return false;
 }
 </script>
@@ -84,6 +117,7 @@
 </form>
 
 </div>
+
 <div id="socials">
     <a href="https://www.linkedin.com/in/akquinn/">
         <img src="Images/linkedin.png" height="45" width="45" />
