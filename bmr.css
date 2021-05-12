@@ -1,0 +1,44 @@
+html{
+    background-color: rgb(214, 214, 214);
+    text-align: center;
+    float:center;
+}
+body{
+    background-color: rgb(214, 214, 214);
+}
+div.inputbox{
+width: 50vw;
+
+
+margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+background-color: rgb(214, 214, 214);
+
+
+}
+
+form
+{
+    border-radius: 25px;
+    background-color: white;
+    text-align: center;
+}
+
+#socials{
+   
+    position:fixed;
+    display:inline;
+    right:0.25%;
+    bottom:0px;
+    
+}
+
+#calorienumber
+{
+    text-align: center;
+
+}

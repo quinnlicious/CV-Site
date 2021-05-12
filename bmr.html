@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en-UK">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+<script src="https://kit.fontawesome.com/caf1c83931.js" crossorigin="anonymous"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+<link rel="stylesheet" href="bmr.css">
+<title>Alexander Quinn</title>
+<meta name=”description” content=”Hey Guys! This is my web project to showcase my web dev journey, and hopefully host some of my projects!”>
+</head>
+
+
+<body>
+
+<div class="aos-script">
+        <script>
+                AOS.init();
+        </script>
+
+</div>
+<div class="inputbox">
+    
+    <p2>
+    <form id="calorieform">
+     <h1>BMR Calculator!</h1>
+    <label for="Age">Age:</label> 
+    <input type=”number” id="Age" name="Age">
+    <br><br>
+    <label for="Height">Height (cm): </label>
+    <input type=”number” id="Height" name="Height">
+    <br><br>
+    <label for="Weight">Weight (kg): </label>
+    <input type=”number” id="Weight" name="Weight">
+    <br><br>
+    
+    <input type="radio" id="gender" name="gender" value="male">
+    <label for="male">Male</label><br>
+    <input type="radio" id="gender" name="gender" value="female">
+    <label for="female">Female</label><br>
+    </p2>
+    <input type="Button" value="Calculate!" onclick="CalculateCalories()" >
+
+    <script>
+    function CalculateCalories()
+    {
+    var form = document.forms["calorieform"];
+    var age = form.elements["Age"];
+    var height = form.elements["Height"];
+    var weight = form.elements["Weight"];
+    var gender = form.elements["gender"];
+    var totalcals = 0;
+    if(age.value!="")
+    {
+        userage = parseInt(age.value);
+    }
+    if(height.value!="")
+    {
+        userheight = parseInt(height.value);
+    }
+    if(weight.value!="")
+    {
+        userweight = parseInt(weight.value);
+    }
+
+    if (gender.value="male")
+    {
+        totalcals = (66.4 + (13.75*userweight) + (5.003 * userheight) - (6.755 * userage));
+    }
+    else if (gender.value="female")
+    {
+        totalcals = (655 + (9.563*userweight) + (1.850 * userheight) - (4.676 * userage));
+    }
+    calorienumber.innerText = totalcals + (" Calories!");
+    return false;
+}
+</script>
+<div class="CalorieCount">
+    <h1 id="calorienumber"> </h1>
+    </div>
+</form>
+
+</div>
+<div id="socials">
+    <a href="https://www.linkedin.com/in/akquinn/">
+        <img src="Images/linkedin.png" height="45" width="45" />
+    </a>
+    <a href="https://github.com/quinnlicious">
+        <img src="Images/github.png" height="45" width="45" />
+    </a>
+    <a href="https://twitter.com/Quinnscodes">
+        <img src="Images/twitter.png" height="45" width="45" />
+    </a>
+</div>
+
+
+
+</body>
+
+</html>
