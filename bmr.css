@@ -1,3 +1,9 @@
+
+form{
+    
+}
+}
+
 html{
     background-color: rgb(214, 214, 214);
     text-align: center;
@@ -8,8 +14,6 @@ body{
 }
 div.inputbox{
 width: 50vw;
-
-
 margin: 0;
   position: absolute;
   top: 50%;
@@ -41,4 +45,19 @@ form
 {
     text-align: center;
 
+}
+@media only screen and (max-width: 767px) 
+{
+div.inputbox
+{
+    top:25vh;
+    left:5vw;
+    transform:translate(0,0);
+    -ms-transform: translate(0, 0);
+    
+}
+form
+{
+    width:90vw;
+}
 }
