@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en-UK">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+<link rel="stylesheet" href="nba.css">
+<title>Alexander Quinn</title>
+<meta name=”description” content=”Hey Guys! This is my web project to showcase my web dev journey, and hopefully host some of my projects!”>
+</head>
+
+<body>
+
+<div id="searchbox">
+    <h1> NBA Player Search</h1>
+    <input type="text" id="namesearch" placeholder="eg..Kawhi Leonard"> </input>
+    <br><br>
+    <button type="button" onclick="nbaplayersearch() , hidediv()" >Search</button>
+</div>
+
+<div id="playercard">
+    <img id="playerpic" src="images/loading.gif"> </img>
+    <p id="nametext"> </p>
+    <p id="heighttext"> </p>
+    <p id="weighttext"> </p>
+    <p id="positiontext"> </p>
+    <p id="teamtext"> </p>
+    <button type="button" onclick="hidediv()" >Search again!</button>
+</div>
+<script>
+function nbaplayersearch()
+{
+var name = document.getElementById("namesearch").value;
+const settings = {
+	"async": true,
+	"crossDomain": true,
+	"url": "https://free-nba.p.rapidapi.com/players?search=" +name+ "&per_page=1&page=0",
+	"method": "GET",
+	"headers": {
+		"x-rapidapi-key": "8afa0bffe7mshdf461e43d58bf9ap191659jsnf5fdc8343e69",
+		"x-rapidapi-host": "free-nba.p.rapidapi.com"
+	}
+};
+
+$.ajax(settings).done(function (response) {
+	console.log(response);
+    nametext.innerText = response.data[0].first_name + (" ") + response.data[0].last_name;
+    heighttext.innerText = response.data[0].height_feet + (" ft  ") + response.data[0].height_inches + (" inches");
+    weighttext.innerText = response.data[0].weight_pounds + (" lbs");
+    positiontext.innerText = response.data[0].position;
+    teamtext.innerText = response.data[0].team.full_name;
+});
+
+$.ajax({
+  url: 'http://api.serpstack.com/search',
+  data: {
+    access_key: '66fda1b1890e4286e2ad517fed049ba1',
+    query: name + "espn",
+    type: "images"
+},
+  dataType: 'json',
+  success: function(apiResponse) {
+    console.log(apiResponse);
+    console.log("Total results:", apiResponse.search_information.total_results);
+    console.log(document.getElementById("playerpic").src);
+    if (document.getElementById("playerpic").src == "file:///E:/Documents/GitHub/CV-Site/images/loading.gif")
+        {
+            document.getElementById("playerpic").src = apiResponse.image_results[0].image_url;
+            console.log("changed");
+        }
+   
+}
+});
+}
+
+function hidediv()
+{
+    var x = document.getElementById("searchbox");
+    var i = document.getElementById("playercard");
+    if (x.style.display === "none") {
+    x.style.display = "block";
+    i.style.display = "none";
+    document.getElementById("playerpic").src = "file:///E:/Documents/GitHub/CV-Site/images/loading.gif";
+    } else {
+    x.style.display = "none";
+    i.style.display = "block";
+  }
+}
+</script>
+
+
+</body>
+
+</html>

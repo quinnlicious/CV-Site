@@ -1,0 +1,57 @@
+html{
+    background-color: white;
+    text-align: center;
+    float:center;
+}
+
+#searchbox
+{
+    position:absolute;
+    top:25%;
+    left:30vw;
+    width:40vw;
+    height: 50vh;
+    background-color: grey;
+    font-family:sans-serif;
+    border-radius: 25px;
+
+}
+
+#playercard
+{
+    position:absolute;
+    top:20%;
+    left:30vw;
+    width:40vw;
+    height: 60vh;
+    background-color: #464444;
+    color: white; 
+    display:none;
+    font-family:sans-serif;
+    border-radius: 25px;
+}
+
+#playerpic
+{
+    width: 15vw;
+    height: auto;
+}
+@media only screen and (max-width: 767px) 
+{
+#searchbox,#playercard
+{
+    top:5vh;
+    left:5vw;
+    width:90vw;  
+    height:90vh;
+}
+form
+{
+    width:90vw;
+}
+#playerpic
+{
+    width: 90%;
+    height: auto;
+}
+}
