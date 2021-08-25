@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en-UK">
+<script src="https://kit.fontawesome.com/caf1c83931.js" crossorigin="anonymous"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="styles.css">
+<title>Alexander Quinn</title>
+</head>
+
+<body>
+    div class="aos-script">
+    <script>
+            AOS.init();
+    </script>
+
+</div>
+<div class="inputbox">
+
+<p2>
+<form id="addform">
+ <h1>Coleraine Casual Stickys fitness challenge</h1>
+<label for="Person">Who?</label> 
+<select id="Person" name="Person">
+    <option value="" disabled="disabled" selected="selected">Who?</option>
+    <option value="G">Glenn</option>
+    <option value="C">Callum</option>
+    <option value="W">Webby</option>
+    <option value="Q">Quinn</option>
+    </select> 
+<br><br>
+<label for="HP">HP: </label>
+<input type=”number” id="HP" name="HP">
+<br><br>
+<script>
+    $.get('../score.text', function(textData, status) {
+       var aLines = textData.split("\n")
+   
+       alert(textData + '\nStatus = ' + status);   
+       $.each(aLines, function(n, sLine) {
+          $('#textFromFile').append('<div>' + sLine + '</div>'); 
+          alert(n + ' - ' + aLines[n]); 
+       });
+       alert("File read OK");
+    }, 'text');
+   </script>
+
+<input type="button" value="Add" onclick="AddtoGraph()" >
+<br><br>
+</body>
+
